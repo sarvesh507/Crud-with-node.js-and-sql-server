@@ -11,7 +11,7 @@ const sqlconfig = {
     password:process.env.PASSWORD,
     server:"localhost",
     database:"emp",
-    port: process.env.PORT,
+    port: process.env.PORT || PORT,
     options: {
         encrypt: true,
         trustServerCertificate: true
