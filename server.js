@@ -8,10 +8,10 @@ const app = express();
 
 const sqlconfig = {
     user:"sa",
-    password:"Chetu@123",
+    password:process.env.PASSWORD,
     server:"localhost",
     database:"emp",
-    port: 1433,
+    port: process.env.PORT,
     options: {
         encrypt: true,
         trustServerCertificate: true
